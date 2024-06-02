@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo de Formulario</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <center><p><h1>elementos de un formulario</h1></p></center>
+
+    <form action="" method="post">
+        <fieldset>
+            <legend>equiseleerreocho</legend>
+
+            <label for="matricula">Matrícula</label>
+            <input type="text" required id="matricula">
+
+            <label for="nombre">Nombre del Alumno</label>
+            <input type="text" name="nombre" id="nombre">
+
+            <label for="fecha">Fecha de Nacimiento</label>
+            <input type="date" name="fecha" id="fecha">
+
+            <label for="telefono">Teléfono</label>
+            <input type="tel" name="telefono" id="telefono">
+
+            <label for="contrasena">Contraseña</label>
+            <input type="password" name="contrasena" id="contrasena">
+
+            <label for="correo">Correo</label>
+            <input type="email" name="correo" id="correo">
+
+            <label for="semana">Semana</label>
+            <input type="week" name="semana" id="semana">
+
+            <label for="mes">Mes</label>
+            <input type="month" name="mes" id="mes">
+
+            <label for="reprobadas">Materias Reprobadas</label>
+            <input type="range" name="reprobadas" id="reprobadas">
+
+            <fieldset>
+                <legend>Egresado de</legend>
+                <input type="checkbox" name="egresado" id="cecyte"> <label for="cecyte">Cecyte</label>
+                <input type="checkbox" name="egresado" id="cbta"> <label for="cbta">Cbta</label>
+                <input type="checkbox" name="egresado" id="cobae"> <label for="cobae">Cobae</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Deportes que practicas</legend>
+                <input type="checkbox" name="deporte" id="futbol"> <label for="futbol">Futbol</label>
+                <input type="checkbox" name="deporte" id="bolleybol"> <label for="bolleybol">Bolleybol</label>
+                <input type="checkbox" name="deporte" id="basketbol"> <label for="basketbol">Basketbol</label>
+            </fieldset>
+
+            <fieldset>
+                <legend>Campos adicionales</legend>
+                <label for="color">Color</label>
+                <input type="color" name="color" id="color">
+                <br>
+                <input type="hidden" name="hiden" id="hiden">
+                <br>
+                <label for="imagen">Imagen</label>
+                <input type="image" name="imagen" id="imagen" src="submit.png" alt="Submit">
+                <br>
+            </fieldset>
+
+            <button type="submit">Enviar</button>
+            <button type="reset">Cancelar</button>
+        </fieldset>
+    </form>
+</body>
+</html>
